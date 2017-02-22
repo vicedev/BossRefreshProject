@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BossRefreshLayout">
+        <attr name="circleTopColor" format="color"></attr>
+        <attr name="circleLeftColor" format="color"></attr>
+        <attr name="circleBottomColor" format="color"></attr>
+        <attr name="circleRightColor" format="color"></attr>
+        <attr name="circleRadius" format="integer"></attr>
+        <attr name="distance" format="integer"></attr>
+        <attr name="refreshHeight" format="integer"></attr>
+        <attr name="centerX" format="float"></attr>
+        <attr name="centerY" format="float"></attr>
+        <attr name="backgroundColor" format="color"></attr>
+    </declare-styleable>
+</resources>
