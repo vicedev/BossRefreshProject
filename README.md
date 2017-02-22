@@ -67,14 +67,3 @@ refresh.setPercent(1.0f);
 /**重置为空闲状态**/
 public void reset();
 ```
-
-
-
-
-
-
-
-
-
-
-
