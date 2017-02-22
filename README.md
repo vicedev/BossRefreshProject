@@ -31,6 +31,16 @@
     </com.vice.bossrefreshlibrary.BossRefreshLayout>
 ```
 
+```java
+mBossRefresh.setOnRefreshingListener(new BossRefreshLayout.onRefreshingListener() {
+    @Override
+    public void onRefreshing() {
+		...
+    	mBossRefresh.setComplete();
+    }
+});
+```
+
 ------
 
 #### BossRefresh
