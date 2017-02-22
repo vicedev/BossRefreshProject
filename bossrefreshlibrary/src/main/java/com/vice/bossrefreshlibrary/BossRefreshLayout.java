@@ -135,8 +135,12 @@ public class BossRefreshLayout extends FrameLayout {
     }
 
     public void setRefreshing() {
+        lv.setTranslationY(refreshHeight);
         refresh.setCurrentState(BossRefresh.STATE_REFRESHING);
         refresh.setPercent(1.0f);
+        if (mListener != null) {
+            mListener.onRefreshing();
+        }
     }
 
     public void setBackGroundColor(int color) {

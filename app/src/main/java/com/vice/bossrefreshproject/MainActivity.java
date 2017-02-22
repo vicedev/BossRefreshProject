@@ -66,4 +66,7 @@ public class MainActivity extends AppCompatActivity {
             data.add("data"+new Random().nextInt(100));
         }
     }
+    public void setRefreshing(View v){
+        mBossRefresh.setRefreshing();
+    }
 }

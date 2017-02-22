@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.vice.bossrefreshproject.MainActivity">
     <com.vice.bossrefreshlibrary.BossRefreshLayout
         android:id="@+id/boss_refresh"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         custom:circleTopColor="@android:color/holo_blue_dark"
         custom:circleLeftColor="@android:color/holo_red_light"
         custom:circleBottomColor="@android:color/holo_green_light"
         custom:circleRightColor="@android:color/holo_orange_light"
+        custom:backgroundColor="@android:color/transparent"
+        custom:centerY="20"
         custom:circleRadius="5"
         custom:distance="5"
         custom:refreshHeight="50">
@@ -21,4 +24,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ListView>
     </com.vice.bossrefreshlibrary.BossRefreshLayout>
-</RelativeLayout>
+    <Button
+        android:text="setRefreshing"
+        android:onClick="setRefreshing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
